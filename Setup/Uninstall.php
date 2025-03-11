@@ -1,6 +1,6 @@
 <?php
 
-namespace Deco\Rates\Setup;
+namespace Deco\Tag\Setup;
 
 use Magento\Framework\DB\Adapter\AdapterInterface;
 use Magento\Framework\Db\Select;

@@ -1,6 +1,6 @@
 <?php
 
-namespace Deco\Rates\Setup;
+namespace Deco\Tag\Setup;
 
 use Magento\Eav\Setup\EavSetup;
 use Magento\Eav\Setup\EavSetupFactory;
