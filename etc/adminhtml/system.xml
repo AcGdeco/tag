@@ -27,7 +27,7 @@
                     <backend_model>Deco\Tag\Model\Image</backend_model>
                     <base_url type="media" scope_info="1">Deco_Tag/view/frontend/web/image/tag</base_url>
                 </field>
-                <field id="upload_image_4" translate="label comment" type="image" sortOrder="50" showInDefault="1" showInWebsite="1" showInStore="1">
+                <field id="upload_image_4" translate="label comment" type="image" sortOrder="200" showInDefault="1" showInWebsite="1" showInStore="1">
                     <label>Tag 4</label>
                     <backend_model>Deco\Tag\Model\Image</backend_model>
                     <base_url type="media" scope_info="1">Deco_Tag/view/frontend/web/image/tag</base_url>
