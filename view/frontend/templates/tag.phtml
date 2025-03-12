@@ -22,16 +22,16 @@ $productTag = $block->getProductTag();
         <?php endif; ?>
 
         <!-- Images Product Create/Edit Page -->
-        <?php if($imageProductUrl[0] != "no_selection"): ?>
+        <?php if($imageProductUrl[0] != null): ?>
             <image class="tag" src="<?= $imageProductUrl[0] ?>" />
         <?php endif; ?>
-        <?php if($imageProductUrl[1] != "no_selection"): ?>
+        <?php if($imageProductUrl[1] != null): ?>
             <image class="tag" src="<?= $imageProductUrl[1] ?>" />
         <?php endif; ?>
-        <?php if($imageProductUrl[2] != "no_selection"): ?>
+        <?php if($imageProductUrl[2] != null): ?>
             <image class="tag" src="<?= $imageProductUrl[2] ?>" />
         <?php endif; ?>
-        <?php if($imageProductUrl[3] != "no_selection"): ?>
+        <?php if($imageProductUrl[3] != null): ?>
             <image class="tag" src="<?= $imageProductUrl[3] ?>" />
         <?php endif; ?>
     </div>

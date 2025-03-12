@@ -66,28 +66,28 @@ class ProductImage extends Template
         $urlBase = $this->storeManager->getStore()->getBaseUrl();
         $url = $urlBase."media/catalog/product";
 
-        if($product->getData('Etiqueta_1') != "no_selection") {
+        if(!empty($product->getData('Etiqueta_1')) && $product->getData('Etiqueta_1') != "no_selection") {
             $path1 = $url.$product->getData('Etiqueta_1');
         } else {
-            $path1 = $product->getData('Etiqueta_1');
+            $path1 = null;
         }
 
-        if($product->getData('Etiqueta_2') != "no_selection") {
+        if(!empty($product->getData('Etiqueta_2')) && $product->getData('Etiqueta_2') != "no_selection") {
             $path2 = $url.$product->getData('Etiqueta_2');
         } else {
-            $path2 = $product->getData('Etiqueta_2');
+            $path2 = null;
         }
 
-        if($product->getData('Etiqueta_3') != "no_selection") {
+        if(!empty($product->getData('Etiqueta_3')) && $product->getData('Etiqueta_3') != "no_selection") {
             $path3 = $url.$product->getData('Etiqueta_3');
         } else {
-            $path3 = $product->getData('Etiqueta_3');
+            $path3 = null;
         }
 
-        if($product->getData('Etiqueta_4') != "no_selection") {
+        if(!empty($product->getData('Etiqueta_4')) && $product->getData('Etiqueta_4') != "no_selection") {
             $path4 = $url.$product->getData('Etiqueta_4');
         } else {
-            $path4 = $product->getData('Etiqueta_4');
+            $path4 = null;
         }
 
         $etiqueta = [
