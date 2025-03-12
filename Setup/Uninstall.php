@@ -45,5 +45,6 @@ class Uninstall implements UninstallInterface
         $eavSetup->removeAttribute(\Magento\Catalog\Model\Product::ENTITY, 'Etiqueta_2');
         $eavSetup->removeAttribute(\Magento\Catalog\Model\Product::ENTITY, 'Etiqueta_3');
         $eavSetup->removeAttribute(\Magento\Catalog\Model\Product::ENTITY, 'Etiqueta_4');
+        $eavSetup->removeAttribute(\Magento\Catalog\Model\Product::ENTITY, 'etiqueta_select');
     }
 }
