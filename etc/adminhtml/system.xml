@@ -16,21 +16,33 @@
                     <label>Tag 1</label>
                     <backend_model>Deco\Tag\Model\Image</backend_model>
                     <base_url type="media" scope_info="1">Deco_Tag/view/frontend/web/image/tag</base_url>
+                    <depends>
+                        <field id="enable">1</field>
+                    </depends>
                 </field>
                 <field id="upload_image_2" translate="label comment" type="image" sortOrder="100" showInDefault="1" showInWebsite="1" showInStore="1">
                     <label>Tag 2</label>
                     <backend_model>Deco\Tag\Model\Image</backend_model>
                     <base_url type="media" scope_info="1">Deco_Tag/view/frontend/web/image/tag</base_url>
+                    <depends>
+                        <field id="enable">1</field>
+                    </depends>
                 </field>
                 <field id="upload_image_3" translate="label comment" type="image" sortOrder="150" showInDefault="1" showInWebsite="1" showInStore="1">
                     <label>Tag 3</label>
                     <backend_model>Deco\Tag\Model\Image</backend_model>
                     <base_url type="media" scope_info="1">Deco_Tag/view/frontend/web/image/tag</base_url>
+                    <depends>
+                        <field id="enable">1</field>
+                    </depends>
                 </field>
                 <field id="upload_image_4" translate="label comment" type="image" sortOrder="200" showInDefault="1" showInWebsite="1" showInStore="1">
                     <label>Tag 4</label>
                     <backend_model>Deco\Tag\Model\Image</backend_model>
                     <base_url type="media" scope_info="1">Deco_Tag/view/frontend/web/image/tag</base_url>
+                    <depends>
+                        <field id="enable">1</field>
+                    </depends>
                 </field>
             </group>
         </section>

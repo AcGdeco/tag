@@ -21,6 +21,13 @@ class Image extends Template
         parent::__construct($context, $data);
     }
 
+    public function getEnable()
+    {
+        $enable = $this->scopeConfig->getValue('decotag/general/enable',\Magento\Store\Model\ScopeInterface::SCOPE_STORE);
+
+        return $enable;
+    }
+
     public function getImageUrl()
     {
         $urlBase = $this->storeManager->getStore()->getBaseUrl();

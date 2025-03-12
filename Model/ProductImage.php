@@ -34,6 +34,11 @@ class ProductImage extends Template
         parent::__construct($context, $data);
     }
 
+    public function getEnable()
+    {
+        return $this->image->getEnable();;
+    }
+
     public function getProductId()
     {
         $product = $this->registry->registry('current_product');
