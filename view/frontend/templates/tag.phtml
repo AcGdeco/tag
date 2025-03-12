@@ -1,0 +1,20 @@
+<?php
+//$etiquetasURL = $block->getImageUrl();
+//var_dump($etiquetasURL);
+$imageUrlAdmin = $block->getImageUrlAdmin();
+?>
+
+<div class="wrapper-tags" >
+    <?php if($imageUrlAdmin[0] != null): ?>
+        <image class="tag" src="<?= $imageUrlAdmin[0] ?>" />
+    <?php endif; ?>
+    <?php if($imageUrlAdmin[1] != null): ?>
+        <image class="tag" src="<?= $imageUrlAdmin[1] ?>" />
+    <?php endif; ?>
+    <?php if($imageUrlAdmin[2] != null): ?>
+        <image class="tag" src="<?= $imageUrlAdmin[2] ?>" />
+    <?php endif; ?>
+    <?php if($imageUrlAdmin[3] != null): ?>
+        <image class="tag" src="<?= $imageUrlAdmin[3] ?>" />
+    <?php endif; ?>
+</div>

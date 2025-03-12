@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
     <body>
-        <referenceBlock name="content">
-            
-        </referenceBlock>    
+        <referenceContainer name="product.info.main">
+            <block class="Deco\Tag\Model\ProductImage" name="product.tag" template="Deco_Tag::tag.phtml" />
+        </referenceContainer>
     </body>
 </page>

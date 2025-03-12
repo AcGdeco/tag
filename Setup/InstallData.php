@@ -86,5 +86,30 @@ class InstallData implements InstallDataInterface
                 'required' => false,
             ]
         );
+        $eavSetup->addAttribute(
+            \Magento\Catalog\Model\Product::ENTITY,
+            'etiqueta_select',
+            [
+                'type' => 'varchar',
+                'label' => 'Selecione a etiqueta',
+                'input' => 'select',
+                'source' => \Magento\Eav\Model\Entity\Attribute\Source\Table::class,
+                'global' => \Magento\Eav\Model\Entity\Attribute\ScopedAttributeInterface::SCOPE_GLOBAL,
+                'group' => 'General',
+                'visible' => true,
+                'required' => false,
+                'user_defined' => true,
+                'default' => '',
+                'searchable' => false,
+                'filterable' => false,
+                'comparable' => false,
+                'visible_on_front' => false,
+                'used_in_product_listing' => true,
+                'unique' => false,
+                'apply_to' => 'simple,configurable,virtual,bundle,downloadable',
+                'sort_order' => 1200,
+                'option' => ['values' => ['Etiqueta 1', 'Etiqueta 2', 'Etiqueta 3', 'Etiqueta 4']]
+            ]
+        );
     }
 }
