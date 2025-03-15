@@ -36,6 +36,7 @@ class InstallData implements InstallDataInterface
                 'used_in_product_listing' => false,
                 'sort_order' => 100,
                 'required' => false,
+                'used_for_sort_by' => false,
             ]
         );
         $eavSetup->addAttribute(
@@ -52,6 +53,7 @@ class InstallData implements InstallDataInterface
                 'used_in_product_listing' => false,
                 'sort_order' => 100,
                 'required' => false,
+                'used_for_sort_by' => false,
             ]
         );
         $eavSetup->addAttribute(
@@ -68,6 +70,7 @@ class InstallData implements InstallDataInterface
                 'used_in_product_listing' => false,
                 'sort_order' => 100,
                 'required' => false,
+                'used_for_sort_by' => false,
             ]
         );
         $eavSetup->addAttribute(
@@ -84,6 +87,7 @@ class InstallData implements InstallDataInterface
                 'used_in_product_listing' => false,
                 'sort_order' => 100,
                 'required' => false,
+                'used_for_sort_by' => false,
             ]
         );
         $eavSetup->addAttribute(
@@ -105,6 +109,7 @@ class InstallData implements InstallDataInterface
                 'comparable' => false,
                 'visible_on_front' => false,
                 'used_in_product_listing' => true,
+                'used_for_sort_by' => false,
                 'unique' => false,
                 'apply_to' => 'simple,configurable,virtual,bundle,downloadable',
                 'sort_order' => 1200,
