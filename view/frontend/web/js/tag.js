@@ -61,9 +61,9 @@ define([
                         var elementoNovo = $(html);
                         var elementoPai;
                         
-                        if($(element).parent().attr('class') == "product-info-main"){
+                        if($(element).parent().attr('class') == "product-info-main" || $(element).parent().attr('class') == "product-item-info"){
                             elementoPai = $(element).parent()
-                        }else if($(element).parent().parent().attr('class') == "product-info-main"){
+                        }else if($(element).parent().parent().attr('class') == "product-info-main" || $(element).parent().parent().attr('class') == "product-item-info"){
                             elementoPai = $(element).parent().parent();
                         }else{
                             elementoPai = $(element).parent().parent().parent();
