@@ -1,38 +1,16 @@
-<?php
-//$etiquetasURL = $block->getImageUrl();
-//var_dump($etiquetasURL);
-$imageAdminUrl = $block->getImageAdminUrl();
-$imageProductUrl = $block->getImageUrl();
-$productTag = $block->getProductTag();
-?>
-<?php if($block->getEnable()): ?>
-    <div class="wrapper-tags" >
-        <!-- Images Config Admin -->
-        <?php if($imageAdminUrl[0] != null && $productTag == "Etiqueta 1"): ?>
-            <image class="tag" src="<?= $imageAdminUrl[0] ?>" />
-        <?php endif; ?>
-        <?php if($imageAdminUrl[1] != null && $productTag == "Etiqueta 2"): ?>
-            <image class="tag" src="<?= $imageAdminUrl[1] ?>" />
-        <?php endif; ?>
-        <?php if($imageAdminUrl[2] != null && $productTag == "Etiqueta 3"): ?>
-            <image class="tag" src="<?= $imageAdminUrl[2] ?>" />
-        <?php endif; ?>
-        <?php if($imageAdminUrl[3] != null && $productTag == "Etiqueta 4"): ?>
-            <image class="tag" src="<?= $imageAdminUrl[3] ?>" />
-        <?php endif; ?>
+<form id="tag-form-ajax"
+      action="<?= $block->getUrl('decotag/index/index') ?>"
+      method="post"
+      style="display:none;"
+>
+    <?= $block->getBlockHtml('formkey') ?>
+    <input type="text" name="ids" id="ids" value="">
+</form>
 
-        <!-- Images Product Create/Edit Page -->
-        <?php if($imageProductUrl[0] != null): ?>
-            <image class="tag" src="<?= $imageProductUrl[0] ?>" />
-        <?php endif; ?>
-        <?php if($imageProductUrl[1] != null): ?>
-            <image class="tag" src="<?= $imageProductUrl[1] ?>" />
-        <?php endif; ?>
-        <?php if($imageProductUrl[2] != null): ?>
-            <image class="tag" src="<?= $imageProductUrl[2] ?>" />
-        <?php endif; ?>
-        <?php if($imageProductUrl[3] != null): ?>
-            <image class="tag" src="<?= $imageProductUrl[3] ?>" />
-        <?php endif; ?>
-    </div>
-<?php endif; ?>
+<script type="text/x-magento-init">
+    {
+        "#tag-form-ajax": {
+            "tag": {}
+        }
+    }
+</script>
