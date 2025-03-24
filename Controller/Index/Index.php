@@ -27,8 +27,9 @@ class Index extends Action implements HttpPostActionInterface
         $ids = $this->getRequest()->getParam('ids');
         $ids = json_decode($ids, true);
         $tagsUrl = $this->image->getImageUrl();
-
         $tags = [];
+        $tagsUrlProduct = [];
+        
         foreach ($ids as $id) {
             $tags[] = $this->image->getProductTag($id);
             $tagsUrlProduct[] = $this->image->getImageUrlProduct($id);
